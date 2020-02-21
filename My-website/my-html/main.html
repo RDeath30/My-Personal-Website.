@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Vũ Hoàng Nam Quân</title>
+    <link rel="stylesheet" type="text/css" href="../my-css/main.css" />
+    <script type="text/javascript" src="../my-script/script.js"></script>
+</head>
+<body>
+    <div id="taskbar">
+        <div onclick="home_look_click()" id="home" class="taskbar-mem" onmouseover="Home_Over()" onmouseout="All_Out()">
+            <div id="hometext" class="taskbartext">
+                <a href="#home-look-scroll" class="taskbar-mem" id="home-link">
+                    HOME
+                </a>                
+            </div>
+        </div>
+        <div onclick="contact_look_click()" id="contact" class="taskbar-mem" onmouseover="Contact_Over()" onmouseout="All_Out()">
+            <div id="contacttext" class="taskbartext">
+                <a href="#contact-look-scroll" class="taskbar-mem" id="contact-link">
+                    CONTACT
+                </a>                
+            </div>
+        </div>
+        <div onclick="More_Click()" id="more" class="taskbar-mem" onmouseover="More_Over()" onmouseout="All_Out()">
+            <div id="moretext" class="taskbartext">
+                <div style="display: block;">MORE</div>
+            </div>
+        </div>
+    </div>
+
+    <div id="more-taskbar">
+        <div id="games" onclick="Game_Click()" onmouseover="Game_Over()" onmouseout="All_Out()" class="more-taskbar-mem">
+            <div class="more-taskbar-text">
+                GAMES
+            </div>
+        </div>
+
+        <div class="games-list" onclick="Snake_Click()" onmouseover="Snake_Over()" onmouseout="All_Out()" id="SNAKE">
+            <div class="games-list-text">
+                <a id="SNAKE-text" style="color: black; text-decoration: none;" href="./games-list/snake.html">
+                    Snake
+                </a>
+            </div>
+        </div>
+
+    </div>
+
+    <div id="first-look">
+        <div id="hi" class="first-look-mem">Hi, I am</div>
+        <div id="name" class="first-look-mem">Vũ Hoàng Nam Quân</div>
+        <div id="infor" class="first-look-mem">
+            <div id="line1"></div>
+            <div>Learning Information Technology</div>
+            <div id="line2"></div>
+        </div>
+
+    <div id="home-look-scroll"></div>
+
+        <div id="home-look">
+            <div id="home-look-name">Vũ Hoàng Nam Quân</div>
+            <div id="home-look-job">
+                <div id="line3"></div>
+                <div>University Student</div>
+                <div id="line4"></div>
+            </div>
+            <div id="round-avatar"></div>
+            <div id="home-look-cmt">I am a university student.</div>
+            
+            <div id="learn-look">
+                <div id="text-area">
+                    <div style="font-size: 15px;color: orange;margin-bottom: 20px;">MY FAVOURITE WEBSITE</div>
+                    <div style="font-size: 35px;font-weight: bold">Want to learn code and don't know where to learn?</div>
+                    <div style="font-size: 35px;font-weight: bold;margin-bottom: 50px;">Let me show you how.</div>
+                    <div id="come-here" style="font-size: 15px;position: relative;display: inline-block;text-align: center;">
+                        <div onclick="howkteam_click()" id="text-come-here" onmouseout="come_here_out()" onmouseover="come_here_over()">
+                            COME HERE                  
+                        </div>
+                        <div id="cursor-png"></div>
+                        <div onclick="howkteam_click()" id="border-come-here" onmouseout="come_here_out()" onmouseover="come_here_over()"></div>
+                    </div>
+                </div>
+            
+            <div id="contact-look-scroll"></div>
+
+                <div id="background-learn-look-cover">
+                </div>
+                
+                <div id="background-learn-look">
+                </div>
+
+                <div id="contact-look">
+                    <div style="font-size: 40px;margin-top: 1%;color: black;text-shadow: -0.5px -0.5px 0 white, 0.5px -0.5px 0 white, -0.5px 0.5px 0 white, 0.5px 0.5px 0 white">- Contact Me -</div>
+                    <div id="map"></div>
+
+                    <div style="clear: both;"></div>
+
+                    <div id="logo-area">
+                        <div class="logo-logo" onmouseover="logo_phone_over()" onmouseout="logo_out()" style="left: 0px;top: 25px;position: absolute;cursor: pointer;display: inline-block;width: 35px;height: 35px;background-repeat: no-repeat;background-size: cover;background-image: url('../my-image/phone.png');">
+                            <div class="logo-logo" id="border-phone"></div>
+                            <div class="logo-logo" id="border-phone-2" style="font-size: 20px;">
+                                0914356xxx
+                            </div>
+                        </div>                 
+                        <div class="logo-logo" onmouseover="logo_facebook_over()" onmouseout="logo_out()" style="left: 0px;top: 75px;position: absolute;cursor: pointer;display: inline-block;width: 35px;height: 35px;background-repeat: no-repeat;background-size: cover;background-image: url('../my-image/facebook.png');">
+                            <div class="logo-logo" id="border-facebook"></div>
+                            <div class="logo-logo" id="border-facebook-2" style="font-size: 20px;">
+                                <a class="logo-logo" href="https://www.facebook.com/quan.vu.30">
+                                    fb.com/quan.vu.30
+                                </a>                        
+                            </div>
+                        </div>
+                        <div class="logo-logo" onmouseover="logo_gmail_over()" onmouseout="logo_out()" style="left: -1px;top: 123px;position: absolute;cursor: pointer;display: inline-block;width: 39px;height: 39px;background-repeat: no-repeat;background-size: cover;background-image: url('../my-image/gmail.png');">
+                            <div class="logo-logo" id="border-gmail"></div>
+                            <div class="logo-logo" id="border-gmail-2" style="font-size: 20px;">
+                                <a class="logo-logo" href="mailto:vu.hoang.nam.quan@gmail.com">
+                                    vu.hoang.nam.quan@gmail.com
+                                </a>                                
+                            </div>
+                        </div>
+                    </div>                    
+                    
+                    <div id="frame-total">
+                        <div onclick="menu_click()" id="frame0" class="frame"></div>
+                        <div id="frame1" class="frame"></div>
+                        <div id="frame2" class="frame"></div>
+                        <div id="frame3" class="frame"></div>
+                        <div id="frame4" class="frame" style="z-index: 46;background-image: url(../my-image/frame/frame4.png);"></div>
+                        <div id="frame5" class="frame" style="z-index: 45;background-image: url(../my-image/frame/frame5.png);"></div>
+                        <div id="frame6" class="frame" style="z-index: 44;background-image: url(../my-image/frame/frame6.png);"></div>
+                        <div id="frame7" class="frame" style="z-index: 43;background-image: url(../my-image/frame/frame7.png);"></div>
+                        <div id="frame8" class="frame" style="z-index: 42;background-image: url(../my-image/frame/frame8.png);"></div>
+                        <div id="frame9" class="frame" style="z-index: 41;background-image: url(../my-image/frame/frame9.png);"></div>
+                        <div id="frame10" class="frame" style="z-index: 40;background-image: url(../my-image/frame/frame10.png);"></div>
+                        <div id="frame11" class="frame" style="z-index: 39;background-image: url(../my-image/frame/frame11.png);"></div>
+                        <div id="frame12" class="frame" style="z-index: 38;background-image: url(../my-image/frame/frame12.png);"></div>
+                        <div onclick="menu_click()" id="frame13" class="frame"></div>
+                    </div>                    
+
+                    <div id="menu-menu">
+                        <div id="phone-logo" class="logo-menu" onmouseover="logo_phone_over()" onmouseout="logo_out()" style="left: 0px;top: 25px;position: absolute;cursor: pointer;display: inline-block;width: 35px;height: 35px;background-repeat: no-repeat;background-size: cover;background-image: url('../my-image/phone.png');">
+                            <div id="border-phone-3" class="logo-logo"></div>
+                            <div id="border-phone-4" class="logo-logo" style="font-size: 20px;">
+                                0914356xxx
+                            </div>
+                        </div>
+                        
+                        <div id="menu-line1"></div>
+
+                        <div id="gmail-logo" class="logo-menu" onmouseover="logo_facebook_over()" onmouseout="logo_out()" style="left: 0px;top: 75px;position: absolute;cursor: pointer;display: inline-block;width: 35px;height: 35px;background-repeat: no-repeat;background-size: cover;background-image: url('../my-image/facebook.png');">
+                            <div id="border-facebook-3" class="logo-logo"></div>
+                            <div id="border-facebook-4" class="logo-logo" style="font-size: 20px;">
+                                <a class="logo-logo" href="https://www.facebook.com/quan.vu.30">
+                                    fb.com/quan.vu.30
+                                </a>                        
+                            </div>
+                        </div>
+
+                        <div id="menu-line2"></div>
+
+                        <div id="facebook-logo" class="logo-menu" onmouseover="logo_gmail_over()" onmouseout="logo_out()" style="left: -1px;top: 123px;position: absolute;cursor: pointer;display: inline-block;width: 39px;height: 39px;background-repeat: no-repeat;background-size: cover;background-image: url('../my-image/gmail.png');">
+                            <div id="border-gmail-3" class="logo-logo"></div>
+                            <div id="border-gmail-4" class="logo-logo" style="font-size: 20px;">
+                                <a class="logo-logo" href="mailto:vu.hoang.nam.quan@gmail.com">
+                                    vu.hoang.nam.quan@gmail.com
+                                </a>                                
+                            </div>
+                        </div>
+
+                        <div id="menu-line3"></div>
+
+                    </div>
+
+                    <div id="end-look" style="z-index: 20;">
+                        <div style="margin-bottom: 1%;font-size: 30px;color: white;margin-top: 2%;">My favourite singer</div>
+                        <div style="margin-bottom: 1%;" id="line-end-look"></div>
+                        <div style="color: white;font-size: 40px;margin-bottom: 2px;">Den Vau</div>
+                        <div id="avatar-end-look"></div>
+                        <div style="margin-top: 1%; margin-bottom: 1%;">
+                            <audio controls="controls">
+                                <source src="../my-sound/rain.mp3" type="audio/mp3">
+                            </audio>
+                        </div>
+                        <div id="endline" style="color: rgb(150, 150, 150);font-size: 10px">© this website was coded at 7.30 am on 2020 Feb 17</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
